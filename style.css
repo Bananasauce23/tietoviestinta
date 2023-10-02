@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap'); 
+
+:root {
+	--teksti: #333333;
+	--tausta: #F6F4EB;
+	--teksti-vaalea: #F6F4EB;
+	--bg-dark: #4682A9;
+	--highlight: #91C8E4;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	background-color: var(--bg-dark);
+	color: var(--teksti-vaalea);
+	padding: 10px;
+	height: 100px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	border-bottom: var(--highlight) solid 5px;
+}
+
+header .logo {
+	float: left;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+header nav {
+	float: right;
+}
+
+header nav a {
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: var(--teksti-vaalea);
+	text-decoration: none;
+	padding: 0.5em;
+}
+
+@keyframes fade {
+	to {color: var(--teksti); background-color: var(--highlight)};
+}
+
+header nav a:hover {
+	animation-name: fade;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+}
+
+main {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-top: 80px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--tausta);
+	color: var(--teksti);
+}
+
+section {
+	max-width: 1400px;
+	width: 70%;
+	margin: 20px auto;
+}
+
+footer {
+	background-color: var(--bg-dark);
+	color: var(--teksti-vaalea);
+	padding: 20px 0;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	line-height: 50px;
+	font-size:35px;
+}
+
+h1 {
+	font-size: 8vw;
+}
+
+h1, h2 {
+	font-family: "Merriweather", sans-serif;
+	line-height: 70px;
+}
+
+td {
+	padding-left:100px;
+}
+
+.tutkintonimikkeet {
+	padding: 0;
+}
+
+.tutkintonimikkeet > li {
+	list-style-type: none;
+}
+
+.tutkintonimikkeet > li > ul {
+	border-left: 5px solid var(--highlight);
+}
+
+.tutkintonimikkeet > li > ul li {
+	padding: 0;
+	list-style-type: square;
+}
+
+.tutkinnonosat h2 {
+	text-align: center;
+}
+
+.showcase {
+	padding-top: 50px;
+	width: 100%;
+	max-width: 100%;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.showcase > div {
+	color: var(--teksti-vaalea);
+	max-width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.ingressi {
+	font-size: 1.2em;
+	font-style: italic;
+	line-height: 1.6em;
+}
+
+.ingressi::first-letter {
+	float: left;
+	font-size: 3.2em;
+	line-height: 1em;
+	font-weight: bold;
+	margin-right: 0.1em;
+}
+
+.tyotehtavia {
+	font-size: 4vw;
+	width:auto;
+	padding-left:50px;
+	padding-right:50px;
+}
+
+.tyotehtavia a{
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--bg-dark);
+	color: var(--teksti-vaalea);
+	border: 1px solid var(--teksti);
+	padding: 20px;
+	margin: 10px 0;
+	border-radius: 10px;
+}
